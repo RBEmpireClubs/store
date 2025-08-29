@@ -1,9 +1,155 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-  <title>RB Store</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Under Maintenance — We'll Be Back Soon</title>
+  <meta name="description" content="Corporate maintenance page — investing time to make the website better." />
+
+  <style>
+    :root{
+      --bg-1: #2b0b0b;
+      --bg-2: #501012;
+      --accent: #ff4d4f;
+      --muted: rgba(255,255,255,0.85);
+      --glass-border: rgba(255,255,255,0.08);
+      --shadow: 0 10px 30px rgba(0,0,0,0.45);
+    }
+    html,body{height:100%;}
+    body{
+      margin:0;
+      font-family: Inter, sans-serif;
+      background: radial-gradient(1200px 700px at 10% 10%, rgba(255,77,79,0.06), transparent), linear-gradient(120deg,var(--bg-1), var(--bg-2));
+      color:var(--muted);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      overflow:hidden;
+    }
+
+    .float-wrap{position:absolute; inset:0; pointer-events:none;}
+    .blob{position:absolute; filter: blur(36px); opacity:0.65; animation: float 9s ease-in-out infinite;}
+    .blob.a{width:520px; height:520px; left:-10%; top:5%; background:linear-gradient(45deg, rgba(255,77,79,0.18), rgba(255,153,153,0.06));}
+    .blob.b{width:420px; height:420px; right:-8%; bottom:12%; background:linear-gradient(45deg, rgba(80,16,18,0.18), rgba(255,77,79,0.04)); animation-duration:12s;}
+    .blob.c{width:220px; height:220px; left:50%; top:70%; transform:translateX(-30%); background:linear-gradient(45deg, rgba(255,120,120,0.12), rgba(255,77,79,0.06)); animation-duration:7s;}
+
+    @keyframes float{0%{transform:translateY(0)}50%{transform:translateY(-26px)}100%{transform:translateY(0)}}
+
+    .hero{
+      width:min(1100px, 94%);
+      max-width:1100px;
+      background: rgba(255,255,255,0.02);
+      border:1px solid var(--glass-border);
+      border-radius:18px;
+      padding:36px;
+      box-shadow:var(--shadow);
+      display:grid;
+      grid-template-columns: 1fr 420px;
+      gap:28px;
+      align-items:center;
+      backdrop-filter: blur(8px);
+    }
+    @media (max-width:920px){.hero{grid-template-columns:1fr; padding:28px}.graphic{order:-1}}
+
+    .title{font-size: clamp(28px, 4.6vw, 54px); font-weight:700; color:#fff; margin:0 0 12px;}
+    .subtitle{font-size: clamp(14px, 1.6vw, 18px); margin:6px 0 18px 0; color: rgba(255,255,255,0.9);}
+
+    .meta{margin-top:14px; display:flex; gap:12px; align-items:center; flex-wrap:wrap;}
+    .pill{background:rgba(255,255,255,0.04); border-radius:999px; padding:10px 14px; font-weight:600; color:var(--muted); font-size:13px;}
+    .dots{display:flex; gap:8px; align-items:center}
+    .dot{width:10px; height:10px; border-radius:50%; background:transparent; border:2px solid rgba(255,255,255,0.12); animation: pulse 1.6s infinite;}
+    .dot:nth-child(1){animation-delay:0s}
+    .dot:nth-child(2){animation-delay:0.2s}
+    .dot:nth-child(3){animation-delay:0.4s}
+    @keyframes pulse{0%{transform:scale(0.9)}50%{transform:scale(1.4); background:var(--accent)}100%{transform:scale(0.9)}}
+
+    .graphic{display:flex; align-items:center; justify-content:center;}
+    .scene{width:420px; height:260px;}
+    svg{width:100%; height:100%}
+    .gear{transform-origin:center; animation:spin 6s linear infinite;}
+    .gear.slow{animation-duration:10s}
+    .building{animation:pop 2.4s ease-in-out infinite alternate;}
+    @keyframes spin{100%{transform:rotate(360deg)}}
+    @keyframes pop{0%{transform:translateY(0)}100%{transform:translateY(-8px)}}
+
+    .legal{margin-top:18px; font-size:13px; color:rgba(255,255,255,0.6);}
+
+    .big-bg{position:absolute; left:4%; top:10%; font-size:clamp(50px, 9vw, 140px); font-weight:800; color:rgba(255,255,255,0.04);}
+
+    .shimmer{position:relative; display:inline-block; overflow:hidden;}
+    .shimmer::after{content:''; position:absolute; left:-120%; top:0; bottom:0; width:40%; background:linear-gradient(90deg, transparent, rgba(255,255,255,0.12), transparent); transform:skewX(-14deg); animation: glide 3.6s linear infinite;}
+    @keyframes glide{to{left:140%}}
+  </style>
 </head>
 <body>
-  <h1>Welcome to RB Store 🚀</h1>
+
+  <div class="float-wrap"><div class="blob a"></div><div class="blob b"></div><div class="blob c"></div></div>
+  <div class="big-bg">MAINTENANCE</div>
+
+  <main class="hero">
+    <section>
+      <h1 class="title"><span class="shimmer">We are temporarily offline — Building something better</span></h1>
+      <p class="subtitle">Our systems are currently undergoing a scheduled infrastructure upgrade. This process involves backend optimization, security patch deployment, and performance tuning. During this maintenance window, some services may remain temporarily unavailable. Normal operations will resume once the update is completed successfully.</p>
+
+      <div class="meta">
+        <div class="pill">Maintance update</div>
+        <div class="pill">System Maintenance</div>
+        <div class="pill">Security & Performance</div>
+        <div class="dots"><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
+      </div>
+
+      <p class="legal">Estimated downtime: <strong>short</strong>. We're working hard — follow updates on our official channels.</p>
+      <div class="legal">Contact us: rbempireclub.gmail.com</div>
+    </section>
+
+    <aside class="graphic">
+      <div class="scene">
+        <svg viewBox="0 0 840 520" xmlns="http://www.w3.org/2000/svg">
+          <g transform="translate(40,30)">
+            <rect x="0" y="240" width="120" height="220" rx="8" fill="rgba(255,255,255,0.03)" />
+            <rect x="140" y="200" width="90" height="260" rx="8" fill="rgba(255,255,255,0.04)" class="building" />
+            <rect x="250" y="180" width="140" height="280" rx="8" fill="rgba(255,255,255,0.05)" class="building" />
+            <rect x="410" y="220" width="110" height="240" rx="8" fill="rgba(255,255,255,0.03)" />
+          </g>
+          <g transform="translate(520,240)">
+            <g class="gear slow" transform="scale(0.8)">
+              <circle cx="0" cy="0" r="40" fill="rgba(255,77,79,0.08)" stroke="rgba(255,255,255,0.06)" stroke-width="2"/>
+            </g>
+            <g class="gear" transform="translate(90,30) scale(0.6)">
+              <circle cx="0" cy="0" r="34" fill="rgba(255,120,120,0.06)" stroke="rgba(255,255,255,0.06)" stroke-width="2"/>
+            </g>
+          </g>
+          <g transform="translate(120,360)">
+            <rect x="0" y="0" rx="8" width="600" height="36" fill="rgba(255,255,255,0.03)" />
+            <rect id="prog" x="4" y="4" rx="6" width="0" height="28" fill="url(#grad)" />
+            <text x="300" y="24" text-anchor="middle" font-size="14" fill="rgba(255,255,255,0.45)">Applying updates…</text>
+            <defs>
+              <linearGradient id="grad" x1="0" x2="1">
+                <stop offset="0" stop-color="#ff4d4f" />
+                <stop offset="1" stop-color="#ff7a78" />
+              </linearGradient>
+            </defs>
+          </g>
+        </svg>
+      </div>
+    </aside>
+  </main>
+
+  <script>
+    const prog = document.getElementById('prog');
+    let pct = 0;
+    function tick(){
+      pct += Math.random()*6 + 3;
+      if(pct>100) pct = 100;
+      prog.setAttribute('width', Math.max(0, Math.round(596 * (pct/100))));
+      if(pct<100) requestAnimationFrame(tick);
+    }
+    requestAnimationFrame(tick);
+  </script>
+
+  <footer style="position:fixed; bottom:14px; left:50%; transform:translateX(-50%); font-size:13px; color:rgba(255,255,255,0.6);">
+    Powered and Managed with Excellence by <strong style="color:#fff;">RB Empire Clubs Media</strong> &copy; 2025.
+  </footer>
+
 </body>
 </html>
