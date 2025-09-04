@@ -31,7 +31,7 @@ description: "Durable steel ring with a bold dragon design.",
 price: "$20",
 originalPrice: "$30",
 category: "Rings",
-link: "https://www.youtube.com/watch?v=Mros4U7Jyz0"
+link: "#"
 },
 {
 image: "https://images.unsplash.com/photo-1594951478749-d102e7a33f4d?q=80&w=1740&auto=format&fit=crop",
