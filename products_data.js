@@ -2,60 +2,103 @@
 // To add or remove products, simply edit this file.
 
 // List all your product categories here.
-const categories = ["Sports", "Rings", "Kitchen"];
-
-// Place all your products in this array.
-// Make sure each product has a "category" property that matches one of the categories above.
-const products = [
-    // Sports Products
+const categories = [
     {
-        image: "https://placehold.co/600x400/FFD700/000000?text=Soccer+Ball",
-        title: "Pro Soccer Ball",
-        description: "Official size and weight for professional play.",
-        price: "$35",
-        originalPrice: "",
-        category: "Sports"
+        image: "https://m.media-amazon.com/images/I/41D9s36fHjL._SY300_SX300_QL70_FMwebp_.jpg",
+        name: "Electronics",
+        link: "#"
     },
-    {
-        image: "https://placehold.co/600x400/20B2AA/FFFFFF?text=Yoga+Mat",
-        title: "Premium Yoga Mat",
-        description: "Non-slip surface for perfect grip and stability.",
-        price: "$40",
-        originalPrice: "",
-        category: "Sports"
-    },
-    // Rings Products
     {
         image: "https://m.media-amazon.com/images/I/51QWAL3a-BL._SY695_.jpg",
-        title: "Stainless Steel Dragon Ring",
-        description: "Durable steel ring with a bold dragon design.",
-        price: "$20",
-        originalPrice: "$30",
-        category: "Rings"
+        name: "Rings",
+        link: "#"
     },
     {
-        image: "https://images.unsplash.com/photo-1594951478749-d102e7a33f4d?q=80&w=1740&auto=format&fit=crop",
-        title: "Silver Engagement Ring",
-        description: "Elegant silver ring with a beautiful diamond.",
+        image: "https://i.ibb.co/Mkp1DWHQ/61r-BLGBy4-TL-UY1100.jpg",
+        name: "Home Goods",
+        link: "#"
+    },
+    {
+        image: "https://images.pexels.com/photos/10398675/pexels-photo-10398675.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        name: "Gadgets",
+        link: "#"
+    },
+    {
+        image: "https://m.media-amazon.com/images/I/71-L91v3y8L.jpg",
+        name: "Books",
+        link: "#"
+    },
+    {
+        image: "https://m.media-amazon.com/images/I/51p4V6j8tML._SY300_SX300_QL70_FMwebp_.jpg",
+        name: "Sports",
+        link: "https://rbempireclubs.github.io/store/subpage"
+    }
+];
+
+// Place all your products in this array.
+const products = [
+    {
+        image: "https://m.media-amazon.com/images/I/51QWAL3a-BL._SY695_.jpg",
+        title: "Stainless Steel Dragon Celtic Ring",
+        description: "Durable stainless steel ring with a bold dragon Celtic design – stylish, unisex, and perfect for everyday wear.",
+        price: "₹142",
+        originalPrice: "₹200",
+        link: ""
+    },
+    {
+        image: "https://placehold.co/600x400/36454F/F0F4C3?text=Product+2",
+        title: "Wireless Headphones",
+        description: "Crystal clear sound with ultimate comfort.",
+        price: "$85",
+        originalPrice: "$100",
+        link: "https://example.com/affiliate-product-2"
+    },
+    {
+        image: "https://placehold.co/600x400/E1F5FE/121212?text=Product+3",
+        title: "Retro Camera",
+        description: "Capture memories in style with this vintage feel camera.",
         price: "$250",
         originalPrice: "$300",
-        category: "Rings"
-    },
-    // Kitchen Products
-    {
-        image: "https://images.unsplash.com/photo-1549476468-f9b2f6f59c27?q=80&w=1740&auto=format&fit=crop",
-        title: "Ceramic Coffee Mug",
-        description: "Stylish ceramic mug, perfect for your morning coffee.",
-        price: "$15",
-        originalPrice: "",
-        category: "Kitchen"
+        link: "https://example.com/affiliate-product-3"
     },
     {
-        image: "https://images.unsplash.com/photo-1560081333-d023924f7e59?q=80&w=1740&auto=format&fit=crop",
-        title: "Chef's Knife Set",
-        description: "High-quality stainless steel knives for all your cooking needs.",
-        price: "$90",
-        originalPrice: "$120",
-        category: "Kitchen"
+        image: "https://placehold.co/600x400/F9FBE7/36454F?text=Product+4",
+        title: "Leather Backpack",
+        description: "Durable and stylish, perfect for daily use.",
+        price: "$95",
+        originalPrice: "$110",
+        link: "https://example.com/affiliate-product-4"
+    },
+    {
+        image: "https://placehold.co/600x400/404040/C0C0C0?text=Product+5",
+        title: "Smart Speaker",
+        description: "Your personal assistant with powerful audio.",
+        price: "$70",
+        originalPrice: "$90",
+        link: "https://example.com/affiliate-product-5"
+    },
+    {
+        image: "https://placehold.co/600x400/90EE90/121212?text=Product+6",
+        title: "Running Shoes",
+        description: "Lightweight and comfortable for your daily run.",
+        price: "$60",
+        originalPrice: "$75",
+        link: "https://example.com/affiliate-product-6"
+    },
+    {
+        image: "https://placehold.co/600x400/ADD8E6/121212?text=Product+7",
+        title: "Digital Tablet",
+        description: "Perfect for work, study, and entertainment.",
+        price: "$320",
+        originalPrice: "$380",
+        link: "https://example.com/affiliate-product-7"
+    },
+    {
+        image: "https://placehold.co/600x400/808080/FFFFFF?text=Product+8",
+        title: "Stylish Backpack",
+        description: "Durable and stylish, perfect for daily use.",
+        price: "$45",
+        originalPrice: "$60",
+        link: "https://example.com/affiliate-product-8"
     }
 ];
