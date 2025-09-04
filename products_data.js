@@ -1,4 +1,4 @@
-// List all your product categories here. Each category now has a name and an image.
+// List all your product categories here. Each category now has a name and a direct image link.
 const categories = [
 {
 name: "Sports",
@@ -38,7 +38,7 @@ link: "products.html"
 },
 // Rings Products
 {
-image: "https://m.media-amazon.com/images/I/51QWAL3a-BL._SY695_.jpg",
+image: "https://m.media-amazon.com/images/I/51QWAL3a-BL.SY695.jpg",
 title: "Stainless Steel Dragon Ring",
 description: "Durable steel ring with a bold dragon design.",
 price: "₹142",
