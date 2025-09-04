@@ -25,11 +25,11 @@ link: "#"
 },
 // Rings Products
 {
-image: "https://www.google.com/search?q=https://m.media-amazon.com/images/I/51QWAL3a-BL.SY695.jpg",
+image: "https://m.media-amazon.com/images/I/51QWAL3a-BL.SY695.jpg",
 title: "Stainless Steel Dragon Ring",
 description: "Durable steel ring with a bold dragon design.",
-price: "$20",
-originalPrice: "$30",
+price: "₹142",
+originalPrice: "₹200",
 category: "Rings",
 link: "#"
 },
