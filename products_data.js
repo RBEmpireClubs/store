@@ -3,6 +3,7 @@ const categories = [
 {
 name: "Sports",
 image: "https://www.google.com/search?q=https://images.unsplash.com/photo-1579952363380-48e02d08a5c4%3Fq%3D80%26w%3D1740%26auto%3Dformat%26fit%3Dcrop",
+link: "https://rbempireclubs.github.io/store/products.html?category=Sports"  
 },
 {
 name: "Rings",
