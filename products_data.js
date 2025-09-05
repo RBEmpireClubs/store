@@ -3,15 +3,17 @@ const categories = [
 {
 name: "Sports",
 image: "https://www.google.com/search?q=https://images.unsplash.com/photo-1579952363380-48e02d08a5c4%3Fq%3D80%26w%3D1740%26auto%3Dformat%26fit%3Dcrop",
-link: "https://rbempireclubs.github.io/store/products.html?category=Sports"  
+link: "https://rbempireclubs.github.io/store/products.html?category=Sports",  
 },
 {
 name: "Rings",
 image: "https://m.media-amazon.com/images/I/51QWAL3a-BL._SY695_.jpg",
+link: "https://rbempireclubs.github.io/store/products.html?category=Rings",  
 },
 {
 name: "Kitchen",
 image: "https://www.google.com/search?q=https://images.unsplash.com/photo-1542646696-e1f0e427210e%3Fq%3D80%26w%3D1740%26auto%3Dformat%26fit%3Dcrop",
+link: "https://rbempireclubs.github.io/store/products.html?category=Kitchen",
 },
 ];
 
