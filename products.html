@@ -90,6 +90,12 @@
 
     <script src="https://rbempireclubs.github.io/store/products_data.js"></script>
     <script>
+        const navList = document.querySelector('.nav-list');
+        const burger = document.querySelector('.burger');
+        burger.addEventListener('click', () => {
+            navList.classList.toggle('v-class-resp');
+        });
+        
         const productGrid = document.getElementById('product-grid');
         const categoryFilters = document.getElementById('category-filters');
         
