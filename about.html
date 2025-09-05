@@ -25,12 +25,30 @@
                 <img src="https://rbempireclubs.github.io/favicon[1].ico" alt="RB Empire Logo" class="h-9 w-9 text-indigo-600">
                 <span class="text-3xl font-extrabold text-gray-800">RB Empire</span>
             </a>
+            
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-gray-500 hover:text-gray-800 focus:outline-none focus:text-gray-800">
+                    <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+
             <nav class="hidden md:flex space-x-8 text-lg font-medium">
-                <a href="index.html" class="text-gray-600 hover:text-indigo-600 transition-colors duration-200">Home</a>
-                <a href="products.html" class="text-gray-600 hover:text-indigo-600 transition-colors duration-200">Products</a>
-                <a href="about.html" class="text-gray-600 hover:text-indigo-600 transition-colors duration-200">About Us</a>
-                <a href="#" class="text-gray-600 hover:text-indigo-600 transition-colors duration-200">Contact</a>
+                <a href="#" class="text-gray-600 hover:text-indigo-600 transition-colors duration-200">Home</a>
+                <a href="https://rbempireclubs.github.io/store/products" class="text-gray-600 hover:text-indigo-600 transition-colors duration-200">Products</a>
+                <a href="https://rbempireclubs.github.io/store/about" class="text-gray-600 hover:text-indigo-600 transition-colors duration-200">About Us</a>
+                <a href="https://rbempireclubs.github.io/store/contact" class="text-gray-600 hover:text-indigo-600 transition-colors duration-200">Contact</a>
             </nav>
+        </div>
+
+        <div id="mobile-menu" class="hidden md:hidden bg-white shadow-md">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="#" class="text-gray-600 hover:text-indigo-600 transition-colors duration-200">Home</a>
+                <a href="https://rbempireclubs.github.io/store/products" class="text-gray-600 hover:text-indigo-600 transition-colors duration-200">Products</a>
+                <a href="https://rbempireclubs.github.io/store/about" class="text-gray-600 hover:text-indigo-600 transition-colors duration-200">About Us</a>
+                <a href="https://rbempireclubs.github.io/store/contact" class="text-gray-600 hover:text-indigo-600 transition-colors duration-200">Contact</a>
+            </div>
         </div>
     </header>
 
@@ -38,7 +56,6 @@
         <h1 class="text-4xl font-extrabold text-center text-gray-800 mb-6">About Us</h1>
         
         <div class="bg-white rounded-2xl shadow-lg p-8 md:p-12 mx-auto space-y-12">
-            <!-- Our Mission Section -->
             <div>
                 <h2 class="text-3xl font-bold text-center text-gray-800 mb-4">Our Mission</h2>
                 <p class="text-lg text-gray-700 leading-relaxed text-center">
@@ -46,7 +63,6 @@
                 </p>
             </div>
 
-            <!-- Our Values Section -->
             <div>
                 <h2 class="text-3xl font-bold text-center text-gray-800 mb-4">Our Values</h2>
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
@@ -65,7 +81,6 @@
                 </div>
             </div>
 
-            <!-- Call to Action -->
             <div class="text-center pt-8 border-t border-gray-200">
                 <p class="text-lg text-gray-700 mb-4">
                     Thank you for being a part of the RB Empire family. We're excited to continue this journey with you!
@@ -82,14 +97,6 @@
             <div>
                 <h3 class="text-xl font-bold text-white mb-4">RB Empire</h3>
                 <p>High-quality products for a modern lifestyle.</p>
-                <div class="flex mt-4 space-x-4">
-                    <a href="#" class="text-gray-400 hover:text-white transition-colors duration-200">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.04c-5.52 0-10 4.48-10 10s4.48 10 10 10 10-4.48 10-10-4.48-10-10-10zm-2 16h-2v-8h2v8zm-2-10h2v-2h-2v2zm6 10h-2v-8h2v8z"/></svg>
-                    </a>
-                    <a href="#" class="text-gray-400 hover:text-white transition-colors duration-200">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 24 24" fill="currentColor"><path d="M2.001 12.285l.006.002c0 .034.004.068.005.102.001.034.002.068.003.102.002.04.004.08.006.12.003.048.006.096.01.144.002.032.004.064.006.096.004.06.008.12.012.18.004.053.008.106.012.159.006.088.012.176.018.264.005.076.01.15.015.226.012.164.025.328.038.492.01.13.02.26.03.39.02.25.04.5.06.75.02.24.04.48.06.72.03.22.06.44.09.66.02.13.04.26.06.39.04.27.08.54.12.81.04.26.08.53.12.79.03.2.06.4.09.6.08.54.16 1.08.24 1.62.1 1.07.2 2.14.3 3.21.05.53.1 1.06.15 1.59.02.16.04.32.06.48.01.08.02.16.03.24.02.12.04.24.06.36.01.06.02.12.03.18.01.04.01.08.02.12h18.995c.01-.04.01-.08.02-.12.01-.06.02-.12.03-.18.02-.12.04-.24.06-.36.01-.08.02-.16.03-.24.05-.53.1-1.06.15-1.59.1-1.07.2-2.14.3-3.21.08-.54.16-1.08.24-1.62.03-.2.06-.4.09-.6.04-.26.08-.53.12-.79.04-.27.08-.54.12-.81.06-.26.12-.52.18-.78.02-.12.04-.24.06-.36.02-.24.04-.48.06-.72.02-.25.04-.5.06-.75.03-.13.05-.26.07-.39.02-.12.04-.25.06-.37.01-.13.02-.26.03-.39.01-.1.02-.2.03-.3.01-.15.02-.3.03-.45.01-.08.02-.15.03-.23.01-.05.01-.1.02-.15.01-.06.01-.1.02-.16.002-.02.002-.04.004-.06.001-.03.003-.06.004-.09.001-.04.003-.08.004-.12.002-.04.004-.08.006-.12.001-.03.003-.06.004-.09.001-.03.002-.06.003-.09.001-.03 0-.06.001-.09l.006-.002c0-5.52-4.48-10-10-10zM12 20c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8z"/></svg>
-                    </a>
-                </div>
             </div>
             <div>
                 <h3 class="text-xl font-bold text-white mb-4">Quick Links</h3>
@@ -111,5 +118,15 @@
             <p>&copy; 2024 RB Empire. All rights reserved.</p>
         </div>
     </footer>
+
+    <script>
+        // --- Mobile Menu Toggle Logic ---
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
 </body>
 </html>
