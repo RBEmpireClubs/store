@@ -106,6 +106,13 @@
     <script src="https://rbempireclubs.github.io/store/products_data.js"></script>
 
     <script>
+        const navList = document.querySelector('.nav-list');
+        const burger = document.querySelector('.burger');
+        burger.addEventListener('click', () => {
+            navList.classList.toggle('v-class-resp');
+        });
+
+    
         // --- Slider Logic ---
         const images = [
             "https://placehold.co/1200x400/4F46E5/ffffff?text=Summer+Sale+Up+to+50%25+Off",
