@@ -23,8 +23,8 @@ const products = [
 // Sports Products
 {
 image: "https://m.media-amazon.com/images/I/61FplynDHWL._SX466_.jpg",
-title: "Astronaut Galaxy Projector Night Light – 360° Rotating Nebula Star Projector with Remote, Timer & Adjustable Head (Guitar Astronaut)",
-description: "Bring the universe to your room with this Astronaut Galaxy Projector featuring 360° rotating nebula lights, remote control, and timer for a magical ambience.",
+title: "Astronaut Nebula Projector",
+description: "360° galaxy lights for magical room vibes.",
 price: "₹699",
 originalPrice: "₹3499",
 category: "Home",
@@ -32,8 +32,8 @@ link: "https://amzn.to/4p8imyr"
 },
 {
 image: "https://m.media-amazon.com/images/I/51-4gzqjiFL._SX342_SY445_QL70_FMwebp_.jpg",
-title: "Create a soothing vibe with this Ocean Wave Night Light Projector featuring 3D acrylic design, multicolor waves, and remote control for relaxing bedroom décor.",
-description: "Transform your space with calming ocean wave effects, vibrant multicolor lighting, and easy remote control—perfect for bedroom décor and relaxation.",
+title: "Acrylic Ocean Wave Lamp",
+description: "Soothing multicolor waves with remote control.",
 price: "₹499",
 originalPrice: "₹2999",
 category: "Home",
@@ -42,8 +42,8 @@ link: "https://amzn.to/3JNhpvv"
 // Rings Products
 {
 image: "https://m.media-amazon.com/images/I/61yfuSfcw9L._SY450_.jpg",
-title: "3D Car Frame Wall Art with Removable Die-Cast Cars, Lights & Wooden Frame – Collectible Display for Car Lovers",
-description: "Showcase your passion with this 3D Car Frame Wall Art featuring die-cast cars, pull-back action, lights, and a stylish wooden frame—perfect for collectors.",
+title: "Die-Cast Car Display Frame",
+description: "Collector’s wooden frame with lights and pull-back action.",
 price: "₹2,999",
 originalPrice: "₹9999",
 category: "Cars",
@@ -51,8 +51,8 @@ link: "https://amzn.to/47w2Fem"
 },
 {
 image: "https://m.media-amazon.com/images/I/41C4MX3ITRL._SY606_.jpg",
-title: "3D Car Frame Wall Art with Removable Die-Cast Cars, Lights & Wooden Frame – Collectible Display for Car Lovers",
-description: "Showcase your passion with this 3D Car Frame Wall Art featuring die-cast cars, pull-back action, lights, and a stylish wooden frame—perfect for collectors.",
+title: "Die-Cast Car Display Frame",
+description: "Collector’s wooden frame with lights and pull-back action.",
 price: "₹2,999",
 originalPrice: "₹9,999",
 category: "Cars",
