@@ -20,6 +20,10 @@
             height: 450px;
             object-fit: cover;
             transition: opacity 0.5s ease-in-out;
+        @media (max-width: 768px) {
+            .slider-image {
+                height: 200px; /* Smaller height for mobile devices */
+            }
         }
         .fade-in {
             animation: fadeIn 1s ease-in-out;
