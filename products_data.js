@@ -60,13 +60,13 @@ link: "https://amzn.to/4ngO9eS"
 },
 // Kitchen Products
 {
-image: "https://images.unsplash.com/photo-1549476468-f9b2f6f59c27?q=80&w=1740&auto=format&fit=crop",
-title: "Skipping Rope for Men & Women – Adjustable Speed Jump Rope for Kids, Girls, and Fitness Exercise (Black, PVC)",
-description: "Stay fit with this adjustable speed skipping rope, designed for men, women, and kids—perfect for exercise, gym, and daily fitness.",
-price: "₹99",
-originalPrice: "₹299",
+image: "https://m.media-amazon.com/images/I/61WVDLXCIsL._SY741_.jpg",
+title: "Waterproof Drawstring Gym Bag with Shoe Compartment & Wet Pocket",
+description: "Spacious waterproof drawstring gym bag with a dedicated shoe compartment, wet-pocket, and comfortable widened straps—ideal for workouts and travel.",
+price: "₹749",
+originalPrice: "₹1499",
 category: "Sports",
-link: ""
+link: "https://amzn.to/4nfGRrI"
 },
 {
 image: "https://images.unsplash.com/photo-1560081333-d023924f7e59?q=80&w=1740&auto=format&fit=crop",
