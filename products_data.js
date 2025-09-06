@@ -61,20 +61,20 @@ link: "https://amzn.to/4ngO9eS"
 // Kitchen Products
 {
 image: "https://m.media-amazon.com/images/I/61WVDLXCIsL._SY741_.jpg",
-title: "Waterproof Drawstring Gym Bag with Shoe Compartment & Wet Pocket",
-description: "Spacious waterproof drawstring gym bag with a dedicated shoe compartment, wet-pocket, and comfortable widened straps—ideal for workouts and travel.",
+title: "Gym Drawstring Bag – Shoe & Wet Pocket",
+description: "Waterproof design with separate shoe and wet compartments for workouts or travel.",
 price: "₹749",
 originalPrice: "₹1499",
 category: "Sports",
 link: "https://amzn.to/4nfGRrI"
 },
 {
-image: "https://images.unsplash.com/photo-1560081333-d023924f7e59?q=80&w=1740&auto=format&fit=crop",
-title: "Chef's Knife Set",
-description: "High-quality stainless steel knives for all your cooking needs.",
-price: "$90",
-originalPrice: "$120",
-category: "Kitchen",
-link: "products.html"
+image: "",
+title: "",
+description: "",
+price: "₹",
+originalPrice: "₹",
+category: "",
+link: ""
 }
 ];
