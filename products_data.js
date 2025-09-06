@@ -1,14 +1,14 @@
 // List all your product categories here. Each category now has a name and a direct image link.
 const categories = [
 {
-name: "Sports",
+name: "Home",
 image: "https://www.google.com/search?q=https://images.unsplash.com/photo-1579952363380-48e02d08a5c4%3Fq%3D80%26w%3D1740%26auto%3Dformat%26fit%3Dcrop",
-link: "https://rbempireclubs.github.io/store/products.html?category=Sports",  
+link: "https://rbempireclubs.github.io/store/products.html?category=Home",  
 },
 {
-name: "Rings",
-image: "https://m.media-amazon.com/images/I/51QWAL3a-BL._SY695_.jpg",
-link: "https://rbempireclubs.github.io/store/products.html?category=Rings",  
+name: "Cars",
+image: "https://m.media-amazon.com/images/I/61yfuSfcw9L._SY450_.jpg",
+link: "https://rbempireclubs.github.io/store/products.html?category=Cars",  
 },
 {
 name: "Kitchen",
@@ -31,42 +31,42 @@ category: "Home",
 link: "https://amzn.to/4p8imyr"
 },
 {
-image: "https://placehold.co/600x400/20B2AA/FFFFFF?text=Yoga+Mat",
-title: "Premium Yoga Mat",
-description: "Non-slip surface for perfect grip and stability.",
-price: "$40",
-originalPrice: "",
-category: "Sports",
-link: "products.html"
+image: "https://m.media-amazon.com/images/I/51-4gzqjiFL._SX342_SY445_QL70_FMwebp_.jpg",
+title: "Create a soothing vibe with this Ocean Wave Night Light Projector featuring 3D acrylic design, multicolor waves, and remote control for relaxing bedroom décor.",
+description: "Transform your space with calming ocean wave effects, vibrant multicolor lighting, and easy remote control—perfect for bedroom décor and relaxation.",
+price: "₹499",
+originalPrice: "₹2999",
+category: "Home",
+link: "https://amzn.to/3JNhpvv"
 },
 // Rings Products
 {
-image: "https://m.media-amazon.com/images/I/51QWAL3a-BL.SY695.jpg",
-title: "Stainless Steel Dragon Ring",
-description: "Durable steel ring with a bold dragon design.",
-price: "₹142",
-originalPrice: "₹250",
-category: "Rings",
-link: "https://www.youtube.com/watch?v=Mros4U7Jyz0"
+image: "https://m.media-amazon.com/images/I/61yfuSfcw9L._SY450_.jpg",
+title: "3D Car Frame Wall Art with Removable Die-Cast Cars, Lights & Wooden Frame – Collectible Display for Car Lovers",
+description: "Showcase your passion with this 3D Car Frame Wall Art featuring die-cast cars, pull-back action, lights, and a stylish wooden frame—perfect for collectors.",
+price: "₹2,999",
+originalPrice: "₹9999",
+category: "Cars",
+link: "https://amzn.to/47w2Fem"
 },
 {
-image: "https://images.unsplash.com/photo-1594951478749-d102e7a33f4d?q=80&w=1740&auto=format&fit=crop",
-title: "Silver Engagement Ring",
-description: "Elegant silver ring with a beautiful diamond.",
-price: "$250",
-originalPrice: "$300",
-category: "Rings",
-link: "products.html"
+image: "https://m.media-amazon.com/images/I/41C4MX3ITRL._SY606_.jpg",
+title: "3D Car Frame Wall Art with Removable Die-Cast Cars, Lights & Wooden Frame – Collectible Display for Car Lovers",
+description: "Showcase your passion with this 3D Car Frame Wall Art featuring die-cast cars, pull-back action, lights, and a stylish wooden frame—perfect for collectors.",
+price: "₹2,999",
+originalPrice: "₹9,999",
+category: "Cars",
+link: "https://amzn.to/4ngO9eS"
 },
 // Kitchen Products
 {
 image: "https://images.unsplash.com/photo-1549476468-f9b2f6f59c27?q=80&w=1740&auto=format&fit=crop",
-title: "Ceramic Coffee Mug",
-description: "Stylish ceramic mug, perfect for your morning coffee.",
-price: "$15",
-originalPrice: "",
-category: "Kitchen",
-link: "products.html"
+title: "Skipping Rope for Men & Women – Adjustable Speed Jump Rope for Kids, Girls, and Fitness Exercise (Black, PVC)",
+description: "Stay fit with this adjustable speed skipping rope, designed for men, women, and kids—perfect for exercise, gym, and daily fitness.",
+price: "₹99",
+originalPrice: "₹299",
+category: "Sports",
+link: ""
 },
 {
 image: "https://images.unsplash.com/photo-1560081333-d023924f7e59?q=80&w=1740&auto=format&fit=crop",
