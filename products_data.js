@@ -22,13 +22,13 @@ link: "https://rbempireclubs.github.io/store/products.html?category=Kitchen",
 const products = [
 // Sports Products
 {
-image: "https://placehold.co/600x400/FFD700/000000?text=Soccer+Ball",
-title: "Pro Soccer Ball",
-description: "Official size and weight for professional play.",
-price: "$35",
-originalPrice: "",
-category: "Sports",
-link: "products.html"
+image: "https://m.media-amazon.com/images/I/61FplynDHWL._SX466_.jpg",
+title: "Astronaut Galaxy Projector Night Light – 360° Rotating Nebula Star Projector with Remote, Timer & Adjustable Head (Guitar Astronaut)",
+description: "Bring the universe to your room with this Astronaut Galaxy Projector featuring 360° rotating nebula lights, remote control, and timer for a magical ambience.",
+price: "₹699",
+originalPrice: "₹3499",
+category: "Home",
+link: "https://amzn.to/4p8imyr"
 },
 {
 image: "https://placehold.co/600x400/20B2AA/FFFFFF?text=Yoga+Mat",
