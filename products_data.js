@@ -11,9 +11,9 @@ image: "https://m.media-amazon.com/images/I/61yfuSfcw9L._SY450_.jpg",
 link: "https://rbempireclubs.github.io/store/products.html?category=Cars",  
 },
 {
-name: "Kitchen",
+name: "Sports",
 image: "https://www.google.com/search?q=https://images.unsplash.com/photo-1542646696-e1f0e427210e%3Fq%3D80%26w%3D1740%26auto%3Dformat%26fit%3Dcrop",
-link: "https://rbempireclubs.github.io/store/products.html?category=Kitchen",
+link: "https://rbempireclubs.github.io/store/products.html?category=Sports",
 },
 ];
 
