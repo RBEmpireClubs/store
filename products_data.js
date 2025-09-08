@@ -69,12 +69,12 @@ category: "Sports",
 link: "https://amzn.to/4nfGRrI"
 },
 {
-image: "",
-title: "",
-description: "",
-price: "₹",
-originalPrice: "₹",
-category: "",
-link: ""
+image: "https://m.media-amazon.com/images/I/61RvIdQL5aL._SY450_.jpg",
+title: "1:32 Porsche 911 Model Car",
+description: "Pull-back die-cast with lights, sound & opening doors.",
+price: "₹949",
+originalPrice: "₹1999",
+category: "Cars",
+link: "https://amzn.to/4mRNhh0"
 }
 ];
