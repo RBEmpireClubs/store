@@ -2,17 +2,17 @@
 const categories = [
 {
 name: "Home",
-image: "https://placehold.co/200x200/F5F5DC/000000/?text=Home",
+image: "https://m.media-amazon.com/images/I/61FplynDHWL._SX466_.jpg",
 link: "https://rbempireclubs.github.io/store/products.html?category=Home",  
 },
 {
 name: "Cars",
-image: "https://placehold.co/200x200/F5F5DC/000000/?text=Cars",
+image: "https://m.media-amazon.com/images/I/61RvIdQL5aL._SY450_.jpg",
 link: "https://rbempireclubs.github.io/store/products.html?category=Cars",  
 },
 {
 name: "Sports",
-image: "https://placehold.co/200x200/F5F5DC/000000/?text=Sports",
+image: "https://m.media-amazon.com/images/I/61RvIdQL5aL._SY450_.jpg",
 link: "https://rbempireclubs.github.io/store/products.html?category=Sports",
 },
 ];
