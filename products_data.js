@@ -12,7 +12,7 @@ link: "https://rbempireclubs.github.io/store/products.html?category=Cars",
 },
 {
 name: "Sports",
-image: "https://m.media-amazon.com/images/I/61RvIdQL5aL._SY450_.jpg",
+image: "https://m.media-amazon.com/images/I/61WVDLXCIsL._SY741_.jpg",
 link: "https://rbempireclubs.github.io/store/products.html?category=Sports",
 },
 ];
@@ -20,7 +20,6 @@ link: "https://rbempireclubs.github.io/store/products.html?category=Sports",
 // Place all your products in this array.
 // Make sure each product has a "category" property that matches one of the category names above.
 const products = [
-// Sports Products
 {
 image: "https://m.media-amazon.com/images/I/61FplynDHWL._SX466_.jpg",
 title: "Astronaut Nebula Projector",
@@ -39,7 +38,6 @@ originalPrice: "₹2999",
 category: "Home",
 link: "https://amzn.to/3JNhpvv"
 },
-// Rings Products
 {
 image: "https://m.media-amazon.com/images/I/61yfuSfcw9L._SY450_.jpg",
 title: "Die-Cast Car Display Frame",
@@ -58,7 +56,6 @@ originalPrice: "₹9,999",
 category: "Cars",
 link: "https://amzn.to/4ngO9eS"
 },
-// Kitchen Products
 {
 image: "https://m.media-amazon.com/images/I/61WVDLXCIsL._SY741_.jpg",
 title: "Gym Drawstring Bag – Shoe & Wet Pocket",
