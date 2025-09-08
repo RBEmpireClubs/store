@@ -21,6 +21,15 @@ link: "https://rbempireclubs.github.io/store/products.html?category=Sports",
 // Make sure each product has a "category" property that matches one of the category names above.
 const products = [
 {
+image: "https://m.media-amazon.com/images/I/61RvIdQL5aL._SY450_.jpg",
+title: "1:32 Porsche 911 Model Car",
+description: "Pull-back die-cast with lights, sound & opening doors.",
+price: "₹949",
+originalPrice: "₹1999",
+category: "Cars",
+link: "https://amzn.to/4mRNhh0"
+},  
+{
 image: "https://m.media-amazon.com/images/I/61FplynDHWL._SX466_.jpg",
 title: "Astronaut Nebula Projector",
 description: "360° galaxy lights for magical room vibes.",
@@ -65,13 +74,4 @@ originalPrice: "₹1499",
 category: "Sports",
 link: "https://amzn.to/4nfGRrI"
 },
-{
-image: "https://m.media-amazon.com/images/I/61RvIdQL5aL._SY450_.jpg",
-title: "1:32 Porsche 911 Model Car",
-description: "Pull-back die-cast with lights, sound & opening doors.",
-price: "₹949",
-originalPrice: "₹1999",
-category: "Cars",
-link: "https://amzn.to/4mRNhh0"
-}
 ];
