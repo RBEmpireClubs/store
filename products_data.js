@@ -21,6 +21,15 @@ link: "https://rbempireclubs.github.io/store/products.html?category=Sports",
 // Make sure each product has a "category" property that matches one of the category names above.
 const products = [
 {
+image: "https://m.media-amazon.com/images/I/61rUI3ktxaL._SX569_.jpg",
+title: "FitBox Adjustable Hand Grip (10–40kg)",
+description: "Stronger grip, bigger forearms, visible veins.",
+price: "₹126",
+originalPrice: "₹489",
+category: "Sports",
+link: "https://amzn.to/4m0WpyB"
+},  
+{
 image: "https://m.media-amazon.com/images/I/61RvIdQL5aL._SY450_.jpg",
 title: "1:32 Porsche 911 Model Car",
 description: "Pull-back die-cast with lights, sound & opening doors.",
