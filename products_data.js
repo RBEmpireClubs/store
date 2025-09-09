@@ -12,7 +12,7 @@ link: "https://rbempireclubs.github.io/store/products.html?category=Cars",
 },
 {
 name: "Sports",
-image: "https://m.media-amazon.com/images/I/61WVDLXCIsL._SY741_.jpg",
+image: "https://m.media-amazon.com/images/I/61rUI3ktxaL._SX569_.jpg",
 link: "https://rbempireclubs.github.io/store/products.html?category=Sports",
 },
 ];
