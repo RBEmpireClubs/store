@@ -51,7 +51,7 @@ link: "https://amzn.to/4p8imyr"
 image: "https://m.media-amazon.com/images/I/51-4gzqjiFL._SX342_SY445_QL70_FMwebp_.jpg",
 title: "Acrylic Ocean Wave Lamp",
 description: "Soothing multicolor waves with remote control.",
-price: "₹499",
+price: "₹299",
 originalPrice: "₹2999",
 category: "Home",
 link: "https://amzn.to/3JNhpvv"
