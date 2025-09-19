@@ -21,6 +21,33 @@ link: "https://rbempireclubs.github.io/store/products.html?category=Sports",
 // Make sure each product has a "category" property that matches one of the category names above.
 const products = [
 {
+image: "https://m.media-amazon.com/images/I/51GVHlIT4IL._SY450_.jpg",
+title: "Nissan Die-Cast Car (White)",
+description: "Mini model car with realistic detailing, perfect for display or gifting.",
+price: "₹919",
+originalPrice: "₹2999",
+category: "Cars",
+link: "https://amzn.to/3IjiieW"
+},
+{
+image: "https://m.media-amazon.com/images/I/51Rnurn1JkL._SX679_.jpg",
+title: "Gear Shifter Keychain",
+description: "Movable gear lever keychain for car lovers.",
+price: "₹219",
+originalPrice: "₹375",
+category: "Cars",
+link: "https://amzn.to/4nYL2ZJ"
+},
+{
+image: "https://m.media-amazon.com/images/I/51TgJQF0vWL.jpg",
+title: "Porsche Stickers Pack",
+description: "Durable vinyl stickers, great for cars, bikes, or laptops.",
+price: "₹149",
+originalPrice: "₹450",
+category: "Cars",
+link: "https://amzn.to/46u5PwO"
+},
+{
 image: "https://m.media-amazon.com/images/I/61rUI3ktxaL._SX569_.jpg",
 title: "FitBox Adjustable Hand Grip (10–40kg)",
 description: "Stronger grip, bigger forearms, visible veins.",
