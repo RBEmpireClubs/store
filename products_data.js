@@ -15,11 +15,6 @@ name: "Sports",
 image: "https://m.media-amazon.com/images/I/61rUI3ktxaL._SX569_.jpg",
 link: "https://rbempireclubs.github.io/store/products.html?category=Sports",
 },
-{
-name: "Die Cast",
-image: "https://m.media-amazon.com/images/I/61rUI3ktxaL._SX569_.jpg",
-link: "https://rbempireclubs.github.io/store/products.html?category=Die Cast",
-},
 ];
 
 // Place all your products in this array.
@@ -31,7 +26,7 @@ title: "Nissan Die-Cast Car (White)",
 description: "Mini model car with realistic detailing, perfect for display or gifting.",
 price: "₹919",
 originalPrice: "₹2999",
-category: "Cars","Die Cast",
+category: "Cars",
 link: "https://amzn.to/3IjiieW"
 },
 {
