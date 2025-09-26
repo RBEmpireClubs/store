@@ -21,6 +21,24 @@ link: "https://rbempireclubs.github.io/store/products.html?category=Sports",
 // Make sure each product has a "category" property that matches one of the category names above.
 const products = [
 {
+image: "https://m.media-amazon.com/images/I/51aqUTAd1EL._SY450_.jpg",
+title: "Jesko Die-Cast Hypercar (1:24)",
+description: "Detailed model with openable doors, lights and sounds, perfect for display or gifting.",
+price: "₹1600",
+originalPrice: "₹2499",
+category: "Cars",
+link: "https://amzn.to/3KomV84"
+},  
+{
+image: "https://m.media-amazon.com/images/I/516J9jyUJkL._SY450_.jpg",
+title: "Skyline R34 Die-Cast Car (Silver)",
+description: "Mini model car with pull-back action, sound and lights, ideal for kids or collectors.",
+price: "₹827",
+originalPrice: "₹2999",
+category: "Cars",
+link: "https://amzn.to/4gEf9TA"
+},
+{
 image: "https://m.media-amazon.com/images/I/51GVHlIT4IL._SY450_.jpg",
 title: "Nissan Die-Cast Car (White)",
 description: "Mini model car with realistic detailing, perfect for display or gifting.",
