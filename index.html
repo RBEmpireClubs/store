@@ -3,203 +3,200 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vanguard Retail | Premium Deals & Offers</title>
+    <title>RB Empire Store | Premium Curated Offers</title>
     <style>
-        /* Modern Reset & Typography */
+        /* Modern Reset & Global Variables */
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: 'Cabinet Grotesk', 'Segoe UI', sans-serif;
         }
 
         :root {
-            --primary: #0f172a; /* Deep Slate Blue */
-            --accent: #2563eb;  /* Electric Blue */
-            --text-dark: #334155;
-            --text-light: #f8fafc;
-            --background-light: #f1f5f9;
-            --card-bg: #ffffff;
+            --bg-gradient: linear-gradient(135deg, #0f172a 0%, #1e1b4b 50%, #311042 100%);
+            --glass-bg: rgba(255, 255, 255, 0.03);
+            --glass-border: rgba(255, 255, 255, 0.08);
+            --glass-blur: blur(16px);
+            --accent-glow: #6366f1;
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
         }
 
         body {
-            background-color: var(--background-light);
-            color: var(--text-dark);
+            background: var(--bg-gradient);
+            background-attachment: fixed;
+            color: var(--text-main);
+            min-height: 100vh;
             line-height: 1.6;
+            overflow-x: hidden;
         }
 
-        /* Navigation Bar */
+        /* Ambient Light Orbs for Glass Depth */
+        .orb {
+            position: absolute;
+            width: 400px;
+            height: 400px;
+            border-radius: 50%;
+            filter: blur(120px);
+            z-index: -1;
+            opacity: 0.4;
+        }
+        .orb-1 { top: -100px; right: -50px; background: #4f46e5; }
+        .orb-2 { top: 600px; left: -100px; background: #7c3aed; }
+
+        /* Glassmorphic Navigation */
         header {
-            background-color: var(--primary);
-            padding: 1rem 5%;
+            background: var(--glass-bg);
+            backdrop-filter: var(--glass-blur);
+            -webkit-backdrop-filter: var(--glass-blur);
+            border-bottom: 1px solid var(--glass-border);
             position: sticky;
             top: 0;
             z-index: 1000;
-            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
         }
 
         .nav-container {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            max-width: 1200px;
+            max-width: 1300px;
             margin: 0 auto;
+            padding: 1.25rem 2rem;
         }
 
         .logo {
-            color: var(--text-light);
             font-size: 1.5rem;
-            font-weight: 700;
-            letter-spacing: 1px;
+            font-weight: 800;
+            letter-spacing: -0.5px;
+            text-transform: uppercase;
         }
 
         .logo span {
-            color: var(--accent);
+            color: var(--accent-glow);
         }
 
         nav ul {
             display: flex;
             list-style: none;
-            gap: 2rem;
+            gap: 1.5rem;
         }
 
         nav a {
-            color: #cbd5e1;
+            color: var(--text-muted);
             text-decoration: none;
+            font-size: 0.9rem;
             font-weight: 500;
             transition: color 0.3s ease;
         }
 
         nav a:hover, nav a.active {
-            color: var(--text-light);
+            color: var(--text-main);
         }
 
-        /* Hero Section */
+        /* Hero Layout */
         .hero {
-            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
-            color: var(--text-light);
-            padding: 6rem 5% 8rem 5%;
             text-align: center;
-        }
-
-        .hero-content {
+            padding: 7rem 2rem 5rem 2rem;
             max-width: 800px;
             margin: 0 auto;
         }
 
         .hero h1 {
-            font-size: 3rem;
+            font-size: 3.5rem;
             font-weight: 800;
+            letter-spacing: -1px;
+            line-height: 1.15;
             margin-bottom: 1.5rem;
-            letter-spacing: -0.5px;
-            line-height: 1.2;
+            background: linear-gradient(to right, #ffffff, #cbd5e1);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
         }
 
         .hero p {
-            font-size: 1.2rem;
-            color: #94a3b8;
-            margin-bottom: 2rem;
+            font-size: 1.15rem;
+            color: var(--text-muted);
+            margin-bottom: 2.5rem;
         }
 
-        .cta-btn {
-            background-color: var(--accent);
-            color: white;
-            padding: 0.75rem 2rem;
-            border-radius: 50px;
-            text-decoration: none;
-            font-weight: 600;
-            box-shadow: 0 4px 14px rgba(37, 99, 235, 0.4);
-            transition: transform 0.2s ease, background-color 0.2s ease;
+        /* Products Grid Setup */
+        .store-container {
+            max-width: 1300px;
+            margin: 0 auto;
+            padding: 0 2rem 6rem 2rem;
         }
 
-        .cta-btn:hover {
-            background-color: #1d4ed8;
-            transform: translateY(-2px);
-        }
-
-        /* Offers Section */
-        .offers-container {
-            max-width: 1200px;
-            margin: -4rem auto 4rem auto;
-            padding: 0 1.5rem;
-        }
-
-        .section-title {
+        .section-header {
             font-size: 1.75rem;
-            font-weight: 700;
-            color: var(--primary);
             margin-bottom: 2rem;
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
+            font-weight: 700;
+            letter-spacing: -0.5px;
         }
 
         .grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-            gap: 2rem;
+            gap: 2.5rem;
         }
 
-        /* Offer Card Component */
-        .card {
-            background: var(--card-bg);
-            border-radius: 16px;
+        /* Glassmorphic Cards dynamically injected via JS */
+        .glass-card {
+            background: var(--glass-bg);
+            backdrop-filter: var(--glass-blur);
+            -webkit-backdrop-filter: var(--glass-blur);
+            border: 1px solid var(--glass-border);
+            border-radius: 24px;
             overflow: hidden;
-            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
             display: flex;
             flex-direction: column;
+            transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.4s;
         }
 
-        .card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        .glass-card:hover {
+            transform: translateY(-8px);
+            border-color: rgba(255, 255, 255, 0.2);
         }
 
-        .card-image {
-            height: 200px;
-            background-color: #cbd5e1;
+        .card-img-wrapper {
+            height: 220px;
             position: relative;
             background-size: cover;
             background-position: center;
         }
 
-        /* Placeholder gradients instead of broken image URLs */
-        .img-1 { background: linear-gradient(45deg, #ff7e5f, #feb47b); }
-        .img-2 { background: linear-gradient(45deg, #6a11cb, #2575fc); }
-        .img-3 { background: linear-gradient(45deg, #37ecba, #72afd3); }
-
-        .badge {
+        .card-badge {
             position: absolute;
-            top: 1rem;
-            left: 1rem;
-            background-color: #ef4444;
-            color: white;
-            padding: 0.25rem 0.75rem;
+            top: 1.25rem;
+            left: 1.25rem;
+            background: rgba(99, 102, 241, 0.25);
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            border: 1px solid rgba(99, 102, 241, 0.4);
+            color: #a5b4fc;
+            padding: 0.35rem 0.85rem;
             border-radius: 50px;
             font-size: 0.75rem;
             font-weight: 700;
             text-transform: uppercase;
         }
 
-        .card-body {
-            padding: 1.5rem;
+        .card-content {
+            padding: 2rem;
             display: flex;
             flex-direction: column;
             flex-grow: 1;
         }
 
         .card-title {
-            font-size: 1.25rem;
-            color: var(--primary);
+            font-size: 1.3rem;
             margin-bottom: 0.5rem;
             font-weight: 700;
         }
 
-        .card-text {
-            color: #64748b;
+        .card-desc {
+            color: var(--text-muted);
             font-size: 0.95rem;
-            margin-bottom: 1.5rem;
+            margin-bottom: 2rem;
             flex-grow: 1;
         }
 
@@ -207,168 +204,151 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            border-top: 1px solid #f1f5f9;
-            padding-top: 1rem;
         }
 
-        .price-container {
+        .price-group {
             display: flex;
             flex-direction: column;
         }
 
-        .original-price {
+        .price-old {
             font-size: 0.85rem;
             text-decoration: line-through;
-            color: #94a3b8;
+            color: #64748b;
         }
 
-        .current-price {
-            font-size: 1.4rem;
+        .price-current {
+            font-size: 1.5rem;
             font-weight: 700;
-            color: var(--primary);
+            color: #ffffff;
         }
 
-        .action-btn {
-            background-color: var(--primary);
-            color: white;
-            padding: 0.5rem 1.25rem;
-            border-radius: 8px;
+        .buy-btn {
+            background: #ffffff;
+            color: #0f172a;
+            padding: 0.65rem 1.5rem;
+            border-radius: 12px;
             text-decoration: none;
             font-size: 0.9rem;
             font-weight: 600;
-            transition: background-color 0.2s ease;
+            transition: opacity 0.2s;
         }
 
-        .action-btn:hover {
-            background-color: var(--accent);
+        .buy-btn:hover {
+            opacity: 0.9;
         }
 
-        /* Footer */
+        /* Legal / Meta Footer Navigation Links */
         footer {
-            background-color: var(--primary);
-            color: #94a3b8;
-            padding: 3rem 5% 1.5rem 5%;
-            margin-top: 4rem;
-            font-size: 0.9rem;
+            background: rgba(0, 0, 0, 0.2);
+            border-top: 1px solid var(--glass-border);
+            padding: 4rem 2rem 2rem 2rem;
         }
 
-        .footer-content {
-            max-width: 1200px;
+        .footer-grid {
+            max-width: 1300px;
             margin: 0 auto;
             display: flex;
             justify-content: space-between;
-            align-items: center;
-            border-bottom: 1px solid #334155;
-            padding-bottom: 2rem;
+            align-items: flex-start;
             flex-wrap: wrap;
-            gap: 1.5rem;
+            gap: 2rem;
         }
 
-        .footer-copy {
+        .footer-links {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .footer-column {
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+        }
+
+        .footer-column h4 {
+            color: var(--text-main);
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 0.5rem;
+        }
+
+        .footer-column a {
+            color: var(--text-muted);
+            text-decoration: none;
+            font-size: 0.85rem;
+            transition: color 0.2s;
+        }
+
+        .footer-column a:hover {
+            color: var(--text-main);
+        }
+
+        .copyright {
             text-align: center;
+            font-size: 0.8rem;
+            color: #475569;
+            margin-top: 4rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.03);
             padding-top: 1.5rem;
-        }
-
-        /* Responsive Design */
-        @media (max-width: 768px) {
-            nav { display: none; } /* Kept simple for UI illustration */
-            .hero h1 { font-size: 2.2rem; }
-            .footer-content { flex-direction: column; text-align: center; }
         }
     </style>
 </head>
 <body>
 
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+
     <header>
         <div class="nav-container">
-            <div class="logo">VANGUARD<span>.</span></div>
+            <div class="logo">RB EMPIRE<span>.</span></div>
             <nav>
                 <ul>
-                    <li><a href="#" class="active">Home</a></li>
-                    <li><a href="#">Active Offers</a></li>
-                    <li><a href="#">Categories</a></li>
-                    <li><a href="#">Support</a></li>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="track.html">Track Order</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
     <section class="hero">
-        <div class="hero-content">
-            <h1>Curated Premium Offers.<br>Unbeatable Value.</h1>
-            <p>Welcome to Vanguard's exclusive deal portal. Handpicked tier-one partnerships, limited-time price cuts, and regional exclusives updated hourly.</p>
-            <a href="#offers" class="cta-btn">View Live Offers</a>
-        </div>
+        <h1>High-Tier Innovation.<br>Direct To Your Door.</h1>
+        <p>Skip the middleman markups. Discover a curated catalog of consumer essentials protected by end-to-end encrypted order tracking pipelines.</p>
     </section>
 
-    <main class="offers-container" id="offers">
-        <h2 class="section-title">
-            Current Featured Deals
-        </h2>
-
-        <div class="grid">
-            <div class="card">
-                <div class="card-image img-1">
-                    <span class="badge">Save 40%</span>
-                </div>
-                <div class="card-body">
-                    <h3 class="card-title">Apex Wireless Headphones</h3>
-                    <p class="card-text">Experience industry-leading active noise cancellation and structural acoustic engineering with up to 45 hours of battery life.</p>
-                    <div class="card-footer">
-                        <div class="price-container">
-                            <span class="original-price">$299.00</span>
-                            <span class="current-price">$179.00</span>
-                        </div>
-                        <a href="#" class="action-btn">Claim Offer</a>
-                    </div>
-                </div>
+    <main class="store-container">
+        <h2 class="section-header">Exclusive Vault Offers</h2>
+        <div class="grid" id="product-root">
             </div>
-
-            <div class="card">
-                <div class="card-image img-2">
-                    <span class="badge">Limited Stock</span>
-                </div>
-                <div class="card-body">
-                    <h3 class="card-title">Quantum Smartwatch Series 5</h3>
-                    <p class="card-text">Next-gen health tracking ecosystems featuring biometric telemetry, onboard GPS navigation, and synchronous cellular integration.</p>
-                    <div class="card-footer">
-                        <div class="price-container">
-                            <span class="original-price">$449.00</span>
-                            <span class="current-price">$319.00</span>
-                        </div>
-                        <a href="#" class="action-btn">Claim Offer</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="card-image img-3">
-                    <span class="badge">Hot Deal</span>
-                </div>
-                <div class="card-body">
-                    <h3 class="card-title">Omni Travel Backpack Pro</h3>
-                    <p class="card-text">Weatherproof ballistic nylon construction optimized with rapid-access tech compartments and intuitive ergonomic weight displacement.</p>
-                    <div class="card-footer">
-                        <div class="price-container">
-                            <span class="original-price">$120.00</span>
-                            <span class="current-price">$75.00</span>
-                        </div>
-                        <a href="#" class="action-btn">Claim Offer</a>
-                    </div>
-                </div>
-            </div>
-        </div>
     </main>
 
     <footer>
-        <div class="footer-content">
-            <div class="logo">VANGUARD<span>.</span></div>
-            <div>All offers are subject to corporate terms and verification agreements.</div>
+        <div class="footer-grid">
+            <div>
+                <div class="logo">RB EMPIRE<span>.</span></div>
+                <p style="color: var(--text-muted); font-size: 0.85rem; margin-top: 0.5rem; max-width: 280px;">High quality standard catalog items running on lightning-fast decentralized architectures.</p>
+            </div>
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h4>Navigation</h4>
+                    <a href="index.html">Home</a>
+                    <a href="track.html">Track Package</a>
+                    <a href="contact.html">Get Support</a>
+                </div>
+                <div class="footer-column">
+                    <h4>Legal Operations</h4>
+                    <a href="privacy.html">Privacy Policy</a>
+                    <a href="refund.html">Refund Policy</a>
+                </div>
+            </div>
         </div>
-        <div class="footer-copy">
-            &copy; 2026 Vanguard Group Holdings. All rights reserved.
+        <div class="copyright">
+            &copy; 2026 RB Empire Store Inc. Infrastructure built on top of secure public-cloud pipelines.
         </div>
     </footer>
 
+    <script src="index.js"></script>
 </body>
 </html>
