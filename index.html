@@ -1,1 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vanguard Retail | Premium Deals & Offers</title>
+    <style>
+        /* Modern Reset & Typography */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
 
+        :root {
+            --primary: #0f172a; /* Deep Slate Blue */
+            --accent: #2563eb;  /* Electric Blue */
+            --text-dark: #334155;
+            --text-light: #f8fafc;
+            --background-light: #f1f5f9;
+            --card-bg: #ffffff;
+        }
+
+        body {
+            background-color: var(--background-light);
+            color: var(--text-dark);
+            line-height: 1.6;
+        }
+
+        /* Navigation Bar */
+        header {
+            background-color: var(--primary);
+            padding: 1rem 5%;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .logo {
+            color: var(--text-light);
+            font-size: 1.5rem;
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+
+        .logo span {
+            color: var(--accent);
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        nav a {
+            color: #cbd5e1;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover, nav a.active {
+            color: var(--text-light);
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+            color: var(--text-light);
+            padding: 6rem 5% 8rem 5%;
+            text-align: center;
+        }
+
+        .hero-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            font-weight: 800;
+            margin-bottom: 1.5rem;
+            letter-spacing: -0.5px;
+            line-height: 1.2;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            color: #94a3b8;
+            margin-bottom: 2rem;
+        }
+
+        .cta-btn {
+            background-color: var(--accent);
+            color: white;
+            padding: 0.75rem 2rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            box-shadow: 0 4px 14px rgba(37, 99, 235, 0.4);
+            transition: transform 0.2s ease, background-color 0.2s ease;
+        }
+
+        .cta-btn:hover {
+            background-color: #1d4ed8;
+            transform: translateY(-2px);
+        }
+
+        /* Offers Section */
+        .offers-container {
+            max-width: 1200px;
+            margin: -4rem auto 4rem auto;
+            padding: 0 1.5rem;
+        }
+
+        .section-title {
+            font-size: 1.75rem;
+            font-weight: 700;
+            color: var(--primary);
+            margin-bottom: 2rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2rem;
+        }
+
+        /* Offer Card Component */
+        .card {
+            background: var(--card-bg);
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+
+        .card-image {
+            height: 200px;
+            background-color: #cbd5e1;
+            position: relative;
+            background-size: cover;
+            background-position: center;
+        }
+
+        /* Placeholder gradients instead of broken image URLs */
+        .img-1 { background: linear-gradient(45deg, #ff7e5f, #feb47b); }
+        .img-2 { background: linear-gradient(45deg, #6a11cb, #2575fc); }
+        .img-3 { background: linear-gradient(45deg, #37ecba, #72afd3); }
+
+        .badge {
+            position: absolute;
+            top: 1rem;
+            left: 1rem;
+            background-color: #ef4444;
+            color: white;
+            padding: 0.25rem 0.75rem;
+            border-radius: 50px;
+            font-size: 0.75rem;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+
+        .card-body {
+            padding: 1.5rem;
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+        }
+
+        .card-title {
+            font-size: 1.25rem;
+            color: var(--primary);
+            margin-bottom: 0.5rem;
+            font-weight: 700;
+        }
+
+        .card-text {
+            color: #64748b;
+            font-size: 0.95rem;
+            margin-bottom: 1.5rem;
+            flex-grow: 1;
+        }
+
+        .card-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-top: 1px solid #f1f5f9;
+            padding-top: 1rem;
+        }
+
+        .price-container {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .original-price {
+            font-size: 0.85rem;
+            text-decoration: line-through;
+            color: #94a3b8;
+        }
+
+        .current-price {
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: var(--primary);
+        }
+
+        .action-btn {
+            background-color: var(--primary);
+            color: white;
+            padding: 0.5rem 1.25rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 600;
+            transition: background-color 0.2s ease;
+        }
+
+        .action-btn:hover {
+            background-color: var(--accent);
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--primary);
+            color: #94a3b8;
+            padding: 3rem 5% 1.5rem 5%;
+            margin-top: 4rem;
+            font-size: 0.9rem;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #334155;
+            padding-bottom: 2rem;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+        }
+
+        .footer-copy {
+            text-align: center;
+            padding-top: 1.5rem;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            nav { display: none; } /* Kept simple for UI illustration */
+            .hero h1 { font-size: 2.2rem; }
+            .footer-content { flex-direction: column; text-align: center; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="nav-container">
+            <div class="logo">VANGUARD<span>.</span></div>
+            <nav>
+                <ul>
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="#">Active Offers</a></li>
+                    <li><a href="#">Categories</a></li>
+                    <li><a href="#">Support</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Curated Premium Offers.<br>Unbeatable Value.</h1>
+            <p>Welcome to Vanguard's exclusive deal portal. Handpicked tier-one partnerships, limited-time price cuts, and regional exclusives updated hourly.</p>
+            <a href="#offers" class="cta-btn">View Live Offers</a>
+        </div>
+    </section>
+
+    <main class="offers-container" id="offers">
+        <h2 class="section-title">
+            Current Featured Deals
+        </h2>
+
+        <div class="grid">
+            <div class="card">
+                <div class="card-image img-1">
+                    <span class="badge">Save 40%</span>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">Apex Wireless Headphones</h3>
+                    <p class="card-text">Experience industry-leading active noise cancellation and structural acoustic engineering with up to 45 hours of battery life.</p>
+                    <div class="card-footer">
+                        <div class="price-container">
+                            <span class="original-price">$299.00</span>
+                            <span class="current-price">$179.00</span>
+                        </div>
+                        <a href="#" class="action-btn">Claim Offer</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-image img-2">
+                    <span class="badge">Limited Stock</span>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">Quantum Smartwatch Series 5</h3>
+                    <p class="card-text">Next-gen health tracking ecosystems featuring biometric telemetry, onboard GPS navigation, and synchronous cellular integration.</p>
+                    <div class="card-footer">
+                        <div class="price-container">
+                            <span class="original-price">$449.00</span>
+                            <span class="current-price">$319.00</span>
+                        </div>
+                        <a href="#" class="action-btn">Claim Offer</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-image img-3">
+                    <span class="badge">Hot Deal</span>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">Omni Travel Backpack Pro</h3>
+                    <p class="card-text">Weatherproof ballistic nylon construction optimized with rapid-access tech compartments and intuitive ergonomic weight displacement.</p>
+                    <div class="card-footer">
+                        <div class="price-container">
+                            <span class="original-price">$120.00</span>
+                            <span class="current-price">$75.00</span>
+                        </div>
+                        <a href="#" class="action-btn">Claim Offer</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="logo">VANGUARD<span>.</span></div>
+            <div>All offers are subject to corporate terms and verification agreements.</div>
+        </div>
+        <div class="footer-copy">
+            &copy; 2026 Vanguard Group Holdings. All rights reserved.
+        </div>
+    </footer>
+
+</body>
+</html>
